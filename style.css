@@ -14,27 +14,20 @@ h2 {
 }
 
 .event {
-
   border-radius: 8px;
   padding: 20px;
-
   width: 560px;
   display: flex;
   flex-direction: column;
-
+  /* removi o fundo extra */
 }
 
 .section-title {
+  font-weight: 600;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.section-title img {
-  width: 20px;
-  height: 20px;
 }
 
 label {
@@ -47,7 +40,7 @@ label {
 input,
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border-radius: 6px;
   border: 1px solid #444;
   background: rgb(28, 31, 33);
@@ -63,148 +56,162 @@ textarea::placeholder {
 
 .row {
   display: flex;
-  gap: 45px;
+  gap: 50px; /* gap menor pra alinhar certinho */
+  margin-bottom: 10px;
 }
 
-
 .field {
-    max-width: 272px;
-  flex: 1;
+  flex: 1; /* agora todos os campos dividem igualmente o espaço */
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
 .type {
-     display: flex;
-    align-items: center;
-    width: 272px;
-height: 43px;
-padding: 4px;
-gap: 4px;
-border-radius: 10px;
-opacity: 0px;
-background: rgb(28, 31, 33);
-
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 10px;
+  background: rgb(28, 31, 33);
+  height: 42px; /* mesma altura dos inputs */
 }
 
 .type button {
-   
   flex: 1;
   padding: 10px;
   border-radius: 6px;
- border: none;
+  border: none;
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   background: rgb(28, 31, 33);
   color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .type .active {
   background: rgb(44, 49, 54);
   color: #fff;
- 
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.type .inactive {
-     gap: 5px;
 }
 
 textarea {
   resize: none;
   height: 100px;
 }
-.local {
-    width: 272px;
-  margin-left: -15px;
-  margin-right: 15px;
+
+/* Paleta de cores */
+/* Paleta de cores */
+.azul,
+.roxo,
+.lilas,
+.rosa,
+.rosado,
+.vermelho,
+.laranja,
+.amarelo,
+.verde,
+.ciano {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 9px solid rgb(44, 49, 54);
 }
 
 .azul {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(89, 178, 255);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(89, 178, 255);
 }
 
 .roxo {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(106, 89, 255);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(106, 89, 255);
 }
+
 .lilas {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(178, 89, 255);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(178, 89, 255);
 }
 
 .rosa {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(255, 89, 249);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(255, 89, 249);
 }
 
 .rosado {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(255, 89, 139);
-    border: 4px solid rgb(44, 49, 54);
-    box-shadow:0 0 0 4px  rgb(85, 162, 230);
+  background-color: rgb(255, 89, 139);
+  box-shadow: 0 0 0 4px rgb(85, 162, 230);
 }
 
 .vermelho {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(255, 89, 89);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(255, 89, 89);
 }
 
 .laranja {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(255, 139, 89);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(255, 139, 89);
 }
 
 .amarelo {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(255, 205, 89);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(255, 205, 89);
 }
 
 .verde {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(89, 255, 145);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(89, 255, 145);
 }
 
 .ciano {
-    width: 40px;
-   height: 40px;
-    border-radius: 50%;
-   background-color: rgb(89, 255, 249);
-    border: 4px solid rgb(44, 49, 54);
+  background-color: rgb(89, 255, 249);
 }
 
 .cores {
-    display: flex;
-    align-items: center;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
+/* Grid dos temas */
+.tema {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.tema h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.grid-temas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.card {
+  background: rgb(44, 49, 54);
+  border: 2px solid rgb(44, 49, 54);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: border 0.2s, transform 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+
+.card span {
+  padding: 6px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card.ativa {
+  border: 2px solid rgb(89, 178, 255);
+}
+
