@@ -11,10 +11,10 @@
 
 
 
-  <div class="event">
+  <div class="evento">
     <h2>crie seu convite</h2>
 
-    <div class="section-title">
+    <div class="titulo-secao">
       <strong><img src="calendar.png" alt="">Sobre o evento</strong>
     </div>
 
@@ -22,27 +22,27 @@
     <input id="titulo" type="text" placeholder="Nome do evento">
 
   
-    <div class="row">
-      <div class="field">
+    <div class="linha">
+      <div class="campo">
         <label for="inicio">Início</label>
         <input id="inicio" type="text" placeholder="DD/MM/AAAA, --:--">
       </div>
-      <div class="field">
+      <div class="campo">
         <label for="fim">Fim</label>
         <input id="fim" type="text" placeholder="DD/MM/AAAA, --:--">
       </div>
     </div>
 
  
-    <div class="row">
-      <div class="field">
+    <div class="linha">
+      <div class="campo">
         <label>Tipo</label>
-        <div class="type">
-          <button class="active"><img src="building-2.png" alt=""> Presencial</button>
-          <button class="inactive"><img src="video.png" alt=""> Online</button>
+        <div class="tipo">
+          <button class="ativo"><img src="building-2.png" alt=""> Presencial</button>
+          <button class="inativo"><img src="video.png" alt=""> Online</button>
         </div>
       </div>
-      <div class="field">
+      <div class="campo">
         <label for="local">Local</label>
         <input id="local" type="text" placeholder="Link ou endereço">
       </div>
@@ -70,23 +70,74 @@
 
    <div class="tema">
     <h2>Tema do evento</h2>
-    <div class="grid-temas">
-      <div class="card ativa"><img src="Image (15).png" alt=""><span>Aniversário</span></div>
-      <div class="card"><img src="Image (16).png" alt=""><span>Infantil</span></div>
-      <div class="card"><img src="Image (17).png" alt=""><span>Formatura</span></div>
-      <div class="card"><img src="Image (18).png" alt=""><span>Casamento</span></div>
-      <div class="card"><img src="Image (19).png" alt=""><span>Chá de bebê</span></div>
-      <div class="card"><img src="Image (20).png" alt=""><span>Chá de panela</span></div>
-      <div class="card"><img src="Image (21).png" alt=""><span>Carnaval</span></div>
-      <div class="card"><img src="Image (22).png" alt=""><span>Páscoa</span></div>
-      <div class="card"><img src="Image (23).png" alt=""><span>São João</span></div>
-      <div class="card"><img src="Image (24).png" alt=""><span>Halloween</span></div>
-      <div class="card"><img src="Image (25).png" alt=""><span>Natal</span></div>
-      <div class="card"><img src="Image (26).png" alt=""><span>Outro</span></div>
+    <div class="grade-temas">
+      <div class="cartao ativa"><img src="Image (15).png" alt=""><span>Aniversário</span></div>
+      <div class="cartao"><img src="Image (16).png" alt=""><span>Infantil</span></div>
+      <div class="cartao"><img src="Image (17).png" alt=""><span>Formatura</span></div>
+      <div class="cartao"><img src="Image (18).png" alt=""><span>Casamento</span></div>
+      <div class="cartao"><img src="Image (19).png" alt=""><span>Chá de bebê</span></div>
+      <div class="cartao"><img src="Image (20).png" alt=""><span>Chá de panela</span></div>
+      <div class="cartao"><img src="Image (21).png" alt=""><span>Carnaval</span></div>
+      <div class="cartao"><img src="Image (22).png" alt=""><span>Páscoa</span></div>
+      <div class="cartao"><img src="Image (23).png" alt=""><span>São João</span></div>
+      <div class="cartao"><img src="Image (24).png" alt=""><span>Halloween</span></div>
+      <div class="cartao"><img src="Image (25).png" alt=""><span>Natal</span></div>
+      <div class="cartao"><img src="Image (26).png" alt=""><span>Outro</span></div>
+    </div>
+
+<div class="estilos">
+
+<div class="estilo">
+  <h3>Estilo</h3>
+  <label class="faw">
+    <input type="checkbox" id="modo">
+    <span class="slider"></span>
+  </label>
+  <span class="modo-text">Escuro</span>
+</div>
+
+<div class="capa">
+  <h3>Foto da capa</h3>
+  <div class="derq">
+  <button class="selecionar"><img src="upload.png" alt="">Selecionar</button>
+  <span class="modo-text">Nenhum arquivo selecionado</span>
+  </div>
+</div>
+
+</div>
+
+
+<div class="contato">
+  <div class="titulo-secao">
+    <strong><img src="" alt="">Dados para contato</strong>
+  </div>
+
+  <div class="campo obrigatorio">
+    <label for="nome">Nome</label>
+    <input id="nome" type="text" placeholder="Nome completo" required>
+    <span class="erro">⚠ Campo obrigatório</span>
+  </div>
+
+  <div class="linha">
+    <div class="campo">
+      <label for="email">E-mail</label>
+      <input id="email" type="email" placeholder="exemplo@email.com">
+    </div>
+    <div class="campo">
+      <label for="telefone">Telefone</label>
+      <input id="telefone" type="text" placeholder="(99) 99999-9999">
     </div>
   </div>
 
-
+  <div class="caixas-marcacao">
+    <label class="caixa"><input type="checkbox" checked> Li e concordo com os <a href="#"> Termos e Condições </a> e com a <a href="#"> Política de Privacidade </a></label>
+    <label class="caixa"><input type="checkbox"> Aceito receber atualizações e promoções por e-mail</label>
+    <label class="caixa"><input type="checkbox"> Aceito receber atualizações e promoções por SMS</label>
+  </div>
+<div class="botao">
+  <button class="gerar"><img src="ticket.png" alt=""> Gerar convite</button>
+  </div>
+</div>
 
 </body>
 </html>
