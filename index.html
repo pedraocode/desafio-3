@@ -1,143 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-  <title>Convite</title>
+  <title>desafio-3</title>
 </head>
 <body>
+  <h1>Crie seu convite</h1>
 
+  <div class="tud">
+    
+    <h1><img src="calendar.png" alt="">Sobre o evento</h1>
+    
+  <div class="inputs">
 
-
-  <div class="evento">
-    <h2>crie seu convite</h2>
-
-    <div class="titulo-secao">
-      <strong><img src="calendar.png" alt="">Sobre o evento</strong>
+    <div class="titulo">
+      <p>Título</p>
+      <input class="titu" type="text" placeholder="Nome do evento">
     </div>
-
-    <label for="titulo">Título</label>
-    <input id="titulo" type="text" placeholder="Nome do evento">
-
   
-    <div class="linha">
-      <div class="campo">
-        <label for="inicio">Início</label>
-        <input id="inicio" type="text" placeholder="DD/MM/AAAA, --:--">
-      </div>
-      <div class="campo">
-        <label for="fim">Fim</label>
-        <input id="fim" type="text" placeholder="DD/MM/AAAA, --:--">
-      </div>
-    </div>
 
- 
-    <div class="linha">
-      <div class="campo">
-        <label>Tipo</label>
-        <div class="tipo">
-          <button class="ativo"><img src="building-2.png" alt=""> Presencial</button>
-          <button class="inativo"><img src="video.png" alt=""> Online</button>
-        </div>
-      </div>
-      <div class="campo">
-        <label for="local">Local</label>
-        <input id="local" type="text" placeholder="Link ou endereço">
-      </div>
+  <div class="inifin">
+    <div class="incio">
+      <p>Início</p>
+      <input class="data" type="datetime-local">
     </div>
-
-    <label for="descricao">Descrição</label>
-    <textarea id="descricao" placeholder="Escreva sobre os detalhes do evento"></textarea>
+  
+    <div class="fim">
+      <p>Fim</p>
+      <input class="dat" type="datetime-local">
+    </div>
   </div>
 
-  <div class="perso">
-     <h1><img src="paintbrush-vertical.png" alt="">Personalização</h1>
-      <h3>cor principal</h3> 
-      <div class="cores">
-      <div class="azul"></div>
-      <div class="roxo"></div> 
-      <div class="lilas"></div>
-      <div class="rosa"></div>
-      <div class="rosado"></div>
-      <div class="vermelho"></div> 
-      <div class="laranja"></div>
-      <div class="amarelo"></div>
-      <div class="verde"></div> 
-      <div class="ciano"></div> 
-  </div> 
-
-   <div class="tema">
-    <h2>Tema do evento</h2>
-    <div class="grade-temas">
-      <div class="cartao ativa"><img src="Image (15).png" alt=""><span>Aniversário</span></div>
-      <div class="cartao"><img src="Image (16).png" alt=""><span>Infantil</span></div>
-      <div class="cartao"><img src="Image (17).png" alt=""><span>Formatura</span></div>
-      <div class="cartao"><img src="Image (18).png" alt=""><span>Casamento</span></div>
-      <div class="cartao"><img src="Image (19).png" alt=""><span>Chá de bebê</span></div>
-      <div class="cartao"><img src="Image (20).png" alt=""><span>Chá de panela</span></div>
-      <div class="cartao"><img src="Image (21).png" alt=""><span>Carnaval</span></div>
-      <div class="cartao"><img src="Image (22).png" alt=""><span>Páscoa</span></div>
-      <div class="cartao"><img src="Image (23).png" alt=""><span>São João</span></div>
-      <div class="cartao"><img src="Image (24).png" alt=""><span>Halloween</span></div>
-      <div class="cartao"><img src="Image (25).png" alt=""><span>Natal</span></div>
-      <div class="cartao"><img src="Image (26).png" alt=""><span>Outro</span></div>
+ <div class="inifin">
+  <div class="tipo">
+    <p>Tipo</p>
+    <div class="botoes">  
+      <button class="presencial"><img src="building-2.png" alt="">Presencial</button>
+      <button class="online"><img src="video.png" alt="">Online</button>
     </div>
+  </div>
 
-<div class="estilos">
-
-<div class="estilo">
-  <h3>Estilo</h3>
-  <label class="faw">
-    <input type="checkbox" id="modo">
-    <span class="slider"></span>
-  </label>
-  <span class="modo-text">Escuro</span>
-</div>
-
-<div class="capa">
-  <h3>Foto da capa</h3>
-  <div class="derq">
-  <button class="selecionar"><img src="upload.png" alt="">Selecionar</button>
-  <span class="modo-text">Nenhum arquivo selecionado</span>
+  <div class="local">
+    <p>Local</p>
+    <input class="link" placeholder="Link ou endereço" type="text">
   </div>
 </div>
 
-</div>
 
-
-<div class="contato">
-  <div class="titulo-secao">
-    <strong><img src="" alt="">Dados para contato</strong>
-  </div>
-
-  <div class="campo obrigatorio">
-    <label for="nome">Nome</label>
-    <input id="nome" type="text" placeholder="Nome completo" required>
-    <span class="erro">⚠ Campo obrigatório</span>
-  </div>
-
-  <div class="linha">
-    <div class="campo">
-      <label for="email">E-mail</label>
-      <input id="email" type="email" placeholder="exemplo@email.com">
+    <div class="descricao">
+      <p>Descrição</p>
+      <textarea placeholder="Escreve sobre os detalhes do evento"></textarea>
     </div>
-    <div class="campo">
-      <label for="telefone">Telefone</label>
-      <input id="telefone" type="text" placeholder="(99) 99999-9999">
-    </div>
+  
   </div>
-
-  <div class="caixas-marcacao">
-    <label class="caixa"><input type="checkbox" checked> Li e concordo com os <a href="#"> Termos e Condições </a> e com a <a href="#"> Política de Privacidade </a></label>
-    <label class="caixa"><input type="checkbox"> Aceito receber atualizações e promoções por e-mail</label>
-    <label class="caixa"><input type="checkbox"> Aceito receber atualizações e promoções por SMS</label>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </div>
-<div class="botao">
-  <button class="gerar"><img src="ticket.png" alt=""> Gerar convite</button>
-  </div>
-</div>
-
 </body>
 </html>
