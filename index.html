@@ -8,11 +8,11 @@
   <title>desafio-3</title>
 </head>
 <body>
-  <h1>Crie seu convite</h1>
+  
 
   <div class="tud">
-    
-    <h1><img src="calendar.png" alt="">Sobre o evento</h1>
+    <h1>Crie seu convite</h1>
+    <h2 class="sobre"><img src="calendar.png" alt="">Sobre o evento</h2>
     
   <div class="inputs">
 
@@ -25,12 +25,12 @@
   <div class="inifin">
     <div class="incio">
       <p>Início</p>
-      <input class="data" type="datetime-local">
+      <input class="data" type="text" placeholder="DD/MM/AAAA, --:--">
     </div>
   
     <div class="fim">
       <p>Fim</p>
-      <input class="dat" type="datetime-local">
+      <input class="dat" type="text" placeholder="DD/MM/AAAA, --:--">
     </div>
   </div>
 
@@ -57,7 +57,24 @@
   
   </div>
   
-  
+  <div class="personalizacao">
+    <h2><img src="paintbrush-vertical.png" alt="">Personalização</h2>
+    <p>Cor principal</p>
+    <div class="cores">
+      
+      <button class="azul"></button>
+      <button class="roxo"></button>
+      <button class="lilas"></button>
+      <button class="rosa"></button>
+      <button class="rove"></button>
+      <button class="vermelho"></button>
+      <button class="laranja"></button>
+      <button class="laramarelo"></button>
+      <button class="amarelo"></button>
+      <button class="verde"></button>
+      <button class="ciano"></button>
+    </div>
+  </div>
   
   
   
@@ -85,5 +102,22 @@
   
   
   </div>
+  <!-- esse script aqui foi i.a porém ta com os comentários explicando oq faz -->
+  <script>
+  const botoes = document.querySelectorAll(".cores button");
+
+  // Define vermelho como ativo de início
+  document.querySelector(".vermelho").classList.add("ativo");
+
+  botoes.forEach(botao => {
+    botao.addEventListener("click", () => {
+      // remove 'ativo' de todos
+      botoes.forEach(b => b.classList.remove("ativo"));
+      // adiciona 'ativo' no clicado
+      botao.classList.add("ativo");
+    });
+  });
+</script>
+
 </body>
 </html>
