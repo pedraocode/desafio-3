@@ -1,123 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-  <title>desafio-3</title>
+    <title>desafio-3</title>
 </head>
 <body>
-  
+  <div id="app">
+    <aside>
+      <div class="aside-container">
+        <header>
+          <h1>🎉</h1>
+          <img src="Festivite.png" alt="">
+          <p>Crie um convite digital para o seu evento</p>
+        </header>
+        <img src="Background (1).png" alt="ilustração bolo">
+      </div>
+    </aside>
 
-  <div class="tud">
-    <h1>Crie seu convite</h1>
-    <h2 class="sobre"><img src="calendar.png" alt="">Sobre o evento</h2>
-    
-  <div class="inputs">
+    <main>
+      <div class="main-container">
+        <h1>Crie seu convite</h1>
 
-    <div class="titulo">
-      <p>Título</p>
-      <input class="titu" type="text" placeholder="Nome do evento">
-    </div>
-  
+        <form method="post" enctype="multipart/form-data">
 
-  <div class="inifin">
-    <div class="incio">
-      <p>Início</p>
-      <input class="data" type="text" placeholder="DD/MM/AAAA, --:--">
-    </div>
-  
-    <div class="fim">
-      <p>Fim</p>
-      <input class="dat" type="text" placeholder="DD/MM/AAAA, --:--">
-    </div>
+
+          <fieldset>
+            <legend><img src="calendar.png" alt="">Sobre o evento</legend>
+
+            <div class="input-wrapper">
+              <label for="titulo">Título</label>
+              <input type="text" id="titulo" placeholder="Nome do evento" required>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label for="inicio">Início</label>
+                <input type="text" id="inicio" placeholder="DD/MM/AAAA">
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="fim">Fim</label>
+                <input type="text" id="fim" placeholder="DD/MM/AAAA">
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label>Tipo</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <input type="radio" name="tipo" id="presencial" checked>
+                    <label for="presencial"><img src="building-2.png" alt="">Presencial</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="tipo" id="online">
+                    <label for="online"><img src="video.png" alt="">Online</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="local">Local</label>
+                <input type="text" id="local" placeholder="Link ou endereço">
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="descricao">Descrição</label>
+              <textarea id="descricao" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+          </fieldset>
+
+
+          <fieldset>
+            <legend><img src="paintbrush-vertical.png" alt="">Personalização</legend>
+
+            <label>Cor principal</label>
+            <div class="radio-wrapper cores">
+              <label class="radio-cor"><input type="radio" name="cor" checked><span class="azul"></span></label>
+              <label class="radio-cor"><input type="radio" name="cor"><span class="roxo"></span></label>
+              <label class="radio-cor"><input type="radio" name="cor"><span class="lilas"></span></label>
+              <label class="radio-cor"><input type="radio" name="cor"><span class="rosa"></span></label>
+              <label class="radio-cor"><input type="radio" name="cor"><span class="vermelho"></span></label>
+              <label class="radio-cor"><input type="radio" name="cor"><span class="laranja"></span></label>
+              <label class="radio-cor"><input type="radio" name="cor"><span class="amarelo"></span></label>
+              <label class="radio-cor"><input type="radio" name="cor"><span class="verde"></span></label>
+              <label class="radio-cor"><input type="radio" name="cor"><span class="ciano"></span></label>
+            </div>
+
+            <label>Tema do evento</label>
+            <div class="radio-wrapper temas">
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="aniversario" checked>
+                <label for="aniversario">
+                  <img src="Image (15).png" alt="Aniversário">
+                  <span>Aniversário</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="infantil">
+                <label for="infantil">
+                  <img src="Image (16).png" alt="Infantil">
+                  <span>Infantil</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="formatura">
+                <label for="formatura">
+                  <img src="Image (17).png" alt="Formatura">
+                  <span>Formatura</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="casamento">
+                <label for="casamento">
+                  <img src="Image (18).png" alt="Casamento">
+                  <span>Casamento</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="cha-bebe">
+                <label for="cha-bebe">
+                  <img src="Image (19).png" alt="Chá de bebê">
+                  <span>Chá de bebê</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="cha-de-panela">
+                <label for="cha-de-panela">
+                  <img src="Image (20).png" alt="Chá de panela">
+                  <span>Chá de panela</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="carnaval">
+                <label for="carnaval">
+                  <img src="Image (21).png" alt="Carnaval">
+                  <span>Carnaval</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="pascoa">
+                <label for="pascoa">
+                  <img src="Image (22).png" alt="Páscoa">
+                  <span>Páscoa</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="sao-joao">
+                <label for="sao-joao">
+                  <img src="Image (23).png" alt="São João">
+                  <span>São João</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="halloween">
+                <label for="halloween">
+                  <img src="Image (24).png" alt="Halloween">
+                  <span>Halloween</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="natal">
+                <label for="natal">
+                  <img src="Image (25).png" alt="Natal">
+                  <span>Natal</span>
+                </label>
+              </div>
+              <div class="radio-inner">
+                <input type="radio" name="tema" id="outro">
+                <label for="outro">
+                  <img src="Image (26).png" alt="Outro">
+                  <span>Outro</span>
+                </label>
+              </div>
+            </div>
+
+
+</fieldset>
+
+          
+        </form>
+      </div>
+    </main>
   </div>
-
- <div class="inifin">
-  <div class="tipo">
-    <p>Tipo</p>
-    <div class="botoes">  
-      <button class="presencial"><img src="building-2.png" alt="">Presencial</button>
-      <button class="online"><img src="video.png" alt="">Online</button>
-    </div>
-  </div>
-
-  <div class="local">
-    <p>Local</p>
-    <input class="link" placeholder="Link ou endereço" type="text">
-  </div>
-</div>
-
-
-    <div class="descricao">
-      <p>Descrição</p>
-      <textarea placeholder="Escreve sobre os detalhes do evento"></textarea>
-    </div>
-  
-  </div>
-  
-  <div class="personalizacao">
-    <h2><img src="paintbrush-vertical.png" alt="">Personalização</h2>
-    <p>Cor principal</p>
-    <div class="cores">
-      
-      <button class="azul"></button>
-      <button class="roxo"></button>
-      <button class="lilas"></button>
-      <button class="rosa"></button>
-      <button class="rove"></button>
-      <button class="vermelho"></button>
-      <button class="laranja"></button>
-      <button class="laramarelo"></button>
-      <button class="amarelo"></button>
-      <button class="verde"></button>
-      <button class="ciano"></button>
-    </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </div>
-  <!-- esse script aqui foi i.a porém ta com os comentários explicando oq faz -->
-  <script>
-  const botoes = document.querySelectorAll(".cores button");
-
-  // Define vermelho como ativo de início
-  document.querySelector(".vermelho").classList.add("ativo");
-
-  botoes.forEach(botao => {
-    botao.addEventListener("click", () => {
-      // remove 'ativo' de todos
-      botoes.forEach(b => b.classList.remove("ativo"));
-      // adiciona 'ativo' no clicado
-      botao.classList.add("ativo");
-    });
-  });
-</script>
-
 </body>
 </html>
