@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-    <title>desafio-3</title>
+  <title>desafio-3</title>
 </head>
 <body>
   <div id="app">
@@ -25,16 +25,12 @@
         <h1>Crie seu convite</h1>
 
         <form method="post" enctype="multipart/form-data">
-
-
           <fieldset>
             <legend><img src="calendar.png" alt="">Sobre o evento</legend>
-
             <div class="input-wrapper">
               <label for="titulo">Título</label>
               <input type="text" id="titulo" placeholder="Nome do evento" required>
             </div>
-
             <div class="flex">
               <div class="input-wrapper flex-1">
                 <label for="inicio">Início</label>
@@ -45,7 +41,6 @@
                 <input type="text" id="fim" placeholder="DD/MM/AAAA">
               </div>
             </div>
-
             <div class="flex">
               <div class="input-wrapper flex-1">
                 <label>Tipo</label>
@@ -60,23 +55,19 @@
                   </div>
                 </div>
               </div>
-
               <div class="input-wrapper flex-1">
                 <label for="local">Local</label>
                 <input type="text" id="local" placeholder="Link ou endereço">
               </div>
             </div>
-
             <div class="textarea-wrapper">
               <label for="descricao">Descrição</label>
               <textarea id="descricao" placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
           </fieldset>
 
-
           <fieldset>
             <legend><img src="paintbrush-vertical.png" alt="">Personalização</legend>
-
             <label>Cor principal</label>
             <div class="radio-wrapper cores">
               <label class="radio-cor"><input type="radio" name="cor" checked><span class="azul"></span></label>
@@ -89,7 +80,6 @@
               <label class="radio-cor"><input type="radio" name="cor"><span class="verde"></span></label>
               <label class="radio-cor"><input type="radio" name="cor"><span class="ciano"></span></label>
             </div>
-
             <label>Tema do evento</label>
             <div class="radio-wrapper temas">
               <div class="radio-inner">
@@ -177,11 +167,69 @@
                 </label>
               </div>
             </div>
+          </fieldset>
 
+          <div class="personalizacao-extra">
+            <div class="estilo-wrapper">
+              <label for="darkmode">Estilo</label>
+              <div class="switch-area">
+                <label class="switch">
+                  <input type="checkbox" id="darkmode">
+                  <span class="slider"></span>
+                </label>
+                <span class="switch-label">Escuro</span>
+              </div>
+            </div>
+            <div class="capa-wrapper">
+              <label for="foto">Foto de capa</label>
+              <div class="file-input">
+                <input type="file" id="foto">
+                <label for="foto" class="btn-upload">
+                  <img src="upload.png" alt=""> Selecionar
+                </label>
+                <span class="file-name">Nenhum arquivo selecionado</span>
+              </div>
+            </div>
+          </div>
 
-</fieldset>
+          <fieldset>
+            <legend><img src="contact (1).png" alt="">Dados para contato</legend>
+            <div class="input-wrapper">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Nome completo" required>
+              <div class="error"><span>Campo obrigatório</span></div>
+            </div>
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="exemplo@email.com" required>
+                <div class="error"><span>Insira um e-mail válido</span></div>
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="(99) 99999-9999">
+              </div>
+            </div>
+          </fieldset>
 
-          
+          <fieldset class="checkbox-group" aria-label="Opções">
+            <div class="checkbox-row">
+              <input type="checkbox" id="termos" required>
+              <label for="termos">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="promo-email">
+              <label for="promo-email">Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="promo-sms">
+              <label for="promo-sms">Aceito receber atualizações e promoções por SMS</label>
+            </div>
+          </fieldset>
+
+          <div class="actions-wrapper">
+            <button class="btn-primary" type="submit">Gerar convite</button>
+          </div>
         </form>
       </div>
     </main>
